@@ -1,0 +1,13 @@
+body {
+    background-color: darkgrey;
+}
+h1 {
+    color:royalblue ;
+    size: 10px;
+    text-align: center;
+}
+p {
+    color: chartreuse;
+    size: 10px;
+    text-align: right;
+}
