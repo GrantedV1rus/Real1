@@ -9,71 +9,158 @@
 
         <title>Home</title>
 
-    <style>
-        ul {
-            list-style-type: none;
-            padding: 0%;
-            margin: 0%;
-            overflow: hidden;
-            background-color: #333333;
-                    }
-        
-        li {
-            float:left;
-        }
+        <style>
+            ul {
+                list-style-type: none;
+                padding: 0%;
+                margin: 0%;
+                overflow: hidden;
+                background-color: #333333;
+            }
+            
+            li {
+                float:left;
+            }
 
-        li a {
-            display: block;
-            padding: 16px;
-            text-decoration: none;
-            text-align: center;
-            color: white;
-        }
+            li a {
+                display: block;
+                padding: 16px;
+                text-decoration: none;
+                text-align: center;
+                color: white;
+            }
 
-        li a:hover {
-            background-color: #111111;
-        }
+            li a:hover {
+                background-color: #111111;
+            }
 
-    
-    </style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            /* Style the header */
+            header {
+                background-color:#333333;
+                padding: 16px;
+                display: block;
+                text-align: center;
+                font-size: 16px;
+                color: white;
+            }
+
+            header a:hover {
+                background-color: #111111;
+            }
+            
+            /* Create two columns/boxes that floats next to each other */
+            nav {
+                float: left;
+                width: 30%;
+                background: #ccc;
+                padding: 20px;
+            }
+            
+            /* Style the list inside the menu */
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            
+            article {
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #f1f1f1;
+            }
+            
+            /* Clear floats after the columns */
+            section::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+            /* Style the footer */
+            footer {
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            
+            /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+            @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+            }
+
+        </style>
+
     </heading>
     <body style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">      
+         
+            <div>
+                <ul>   
+                    <li><a href="home.htm" target="_blank">Home</a></li> 
+                    <li><a href="about.htm" target="_blank">About</a></li>
+                    <li><a href="contact.htm" target="_blank">Contact</a></li>
+                    <li><a href="skills.htm" target="_blank">Skills</a></li> 
+                </ul>
+            </div>
+               
+            <br>
+    
+       
+    <figure>
+        <img src="Assets/Images/blank-man.jpg" alt="blank-man" style=max-width:100% height="auto">
+        <img src="Assets/Images/blank-man.jpg" alt="blank-man" style=max-width:100% height="auto">
+        <img src="Assets/Images/blank-man.jpg" alt="blank-man" style=max-width:100% height="auto">
+    </figure>
         
-        <ul>   
-       <li><a href="home.htm" target="_blank">Home</a></li> 
-        <li><a href="about.htm" target="_blank">About</a></li>
-        <li><a href="contact.htm" target="_blank">Contact</a></li>
-       <li><a href="skills.htm" target="_blank">Skills</a></li> 
-        </ul>
-
-        <br>
-        
-        <dev>
-      <p>Hi, I’m <b>Tinashe</b>, a passionate web developer currently studying business-management-with-innovation-and-technology at the University of Salford. 
-        <br> With a strong foundation in HTML, CSS, and JavaScript, I specialize in creating responsive, user-friendly websites that not only look great but also deliver seamless functionality across all devices. 
-        <br> I’m constantly honing my skills and exploring the latest trends in web development to bring innovative digital solutions to life.
-        <br> My journey into web development started with a fascination for technology and problem-solving. 
-        <br> Over time, I’ve developed a portfolio of projects that highlight my abilities to turn creative ideas into functional applications. 
-        <br> Whether I’m working on front-end interfaces or diving into the logic of back-end systems, I aim to build intuitive websites that provide exceptional user experiences.
-        <br> Feel free to explore my website to learn more about my skills, projects, and what drives my passion for the digital world. 
-        <br> Let’s connect and create something amazing together!</p>
-        </dev>
-
-        <br>
-        <br>
-        <br>
-        
-        <img src="Assets/Images/blank-man.jpg" alt="blank-man" width="400" height="300">
+        <section>
+            <article>
+                <div>
+                    <p id="introduction">Hi, I’m <b>Tinashe</b>, a passionate web developer currently studying business-management-with-innovation-and-technology at the University of Salford. 
+                     With a strong foundation in HTML, CSS, and JavaScript, I specialize in creating responsive, user-friendly websites that not only look great but also deliver seamless functionality across all devices. 
+                    I’m constantly honing my skills and exploring the latest trends in web development to bring innovative digital solutions to life.
+                    My journey into web development started with a fascination for technology and problem-solving. 
+                    Over time, I’ve developed a portfolio of projects that highlight my abilities to turn creative ideas into functional applications. 
+                    Whether I’m working on front-end interfaces or diving into the logic of back-end systems, I aim to build intuitive websites that provide exceptional user experiences.
+                    Feel free to explore my website to learn more about my skills, projects, and what drives my passion for the digital world. 
+                    Let’s connect and create something amazing together!</p>
+                </div>
+            </article>
 
             <br>
+            <br>    
+            <br>
+            <br>
 
-        <a href="about.htm" target="_blank" onclick="myFunction(LM)"> <button> Learn More </button></a>
-       <script>
-            function myFunction(LM) {
-                open(about.htm)
-            }
-        </script>
-        
-        
+            <a href="about.htm" target="_blank" onclick="AboutFunction()"> <button> Learn More </button></a>
+                <script>
+                    function AboutFunction() {
+                    open(about.htm)
+                    }
+                </script>
+        </section>
+
+        <footer> 
+            <div>
+                <h2 style="text-align: left;">Quick Links</h2>     
+                    <ul>  
+                        <li><a href="home.htm" target="_blank">Home</a></li> 
+                        <li><a href="about.htm" target="_blank">About</a></li>
+                        <li><a href="contact.htm" target="_blank">Contact</a></li>
+                        <li><a href="skills.htm" target="_blank">Skills</a></li> 
+                    </ul>   
+            </div>
+        </footer> 
+
     </body>
 </html>
