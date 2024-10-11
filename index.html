@@ -9,33 +9,29 @@
 
         <title>Home</title>
 
-        <link rel="stylesheet" href="Assets\CSS\nav.css">
         <link rel="stylesheet" href="Assets\CSS\main.css">
     </head>
     <body>      
          
+        <nav>
             <div>
                 <ul>   
-                    <li><a href="home.htm" target="_blank">Home</a></li> 
+                    <li><a href="index.html" target="_blank">Home</a></li> 
                     <li><a href="about.htm" target="_blank">About</a></li>
                     <li><a href="contact.htm" target="_blank">Contact</a></li>
                     <li><a href="skills.htm" target="_blank">Skills</a></li> 
                 </ul>
             </div>
-               
-            <br>
+        </nav>
     
-       
-    <figure>
-        <img src="Assets/Images/blank-man.jpg" alt="blank-man" style=max-width:100% height="auto">
-        <img src="Assets/Images/blank-man.jpg" alt="blank-man" style=max-width:100% height="auto">
-        <img src="Assets/Images/blank-man.jpg" alt="blank-man" style=max-width:100% height="auto">
-    </figure>
-        
-        <section>
-            <article>
-                <div>
-                    <p id="introduction">Hi, I’m <b>Tinashe</b>, a passionate web developer currently studying business-management-with-innovation-and-technology at the University of Salford. 
+        <div class="imageflex">
+        <figure>
+        <img src="Assets/Images/holiday.JPEG" alt="blank-man" style=max-width:100% height="auto" style="float: left;">
+        </figure>
+
+                   <p class="imageflexcontent" style="width: 600px; font-size:larger ; text-align: justify; line-height: 35px;">
+                   
+                 Hi, I’m <b>Tinashe</b>, a passionate web developer currently studying business-management-with-innovation-and-technology at the University of Salford. 
                      With a strong foundation in HTML, CSS, and JavaScript, I specialize in creating responsive, user-friendly websites that not only look great but also deliver seamless functionality across all devices. 
                     I’m constantly honing my skills and exploring the latest trends in web development to bring innovative digital solutions to life.
                     My journey into web development started with a fascination for technology and problem-solving. 
@@ -43,31 +39,22 @@
                     Whether I’m working on front-end interfaces or diving into the logic of back-end systems, I aim to build intuitive websites that provide exceptional user experiences.
                     Feel free to explore my website to learn more about my skills, projects, and what drives my passion for the digital world. 
                     Let’s connect and create something amazing together!</p>
-                </div>
-            </article>
-
-            <br>
-            <br>    
-            <br>
-            <br>
-
-            <a href="about.htm" target="_blank" onclick="AboutFunction()"> <button> Learn More </button></a>
-                <script>
-                    function AboutFunction() {
-                    open(about.htm)
-                    }
-                </script>
-        </section>
+        </div>
 
         <footer> 
             <div>
-                <h2 style="text-align: left;">Quick Links</h2>     
+                <h2 style="text-align: center;">Quick Links</h2>     
                     <ul>  
                         <li><a href="home.htm" target="_blank">Home</a></li> 
                         <li><a href="about.htm" target="_blank">About</a></li>
                         <li><a href="contact.htm" target="_blank">Contact</a></li>
                         <li><a href="skills.htm" target="_blank">Skills</a></li> 
                     </ul>   
+            </div>
+
+            <br>
+            <div style="margin: 70px 0px 0px 0px; text-align:center;">
+             <!-- insert linkedin & email icon to left with maplink-->   <p> This website is property of Tinashe Sean Mungoshi</p>
             </div>
         </footer> 
 
